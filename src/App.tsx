@@ -10,24 +10,18 @@ const App: React.FC = () => {
   const isAuthenticated = authService.isAuthenticated();
 
   return (
-      <Router>
-          <Routes>
-              {/* Ruta principal "/": Muestra Login si no está autenticado */}
-              <Route path="/" element={isAuthenticated ? <Navigate to="/home" /> : <LoginForm />} />
-
-              {/* Ruta Home: solo accesible si el usuario está autenticado */}
-              <Route path="/home" element={isAuthenticated ? <HomePage /> : <Navigate to="/" />} />
-
-              {/* Ruta de teoría-práctica, protegida por autenticación */}
-              <Route path="/theory-practice" element={isAuthenticated ? <TheoryPracticePage /> : <Navigate to="/" />} />
-
-              {/* Ruta de Registro */}
-              <Route path="/register" element={<RegisterForm />} />
-
-              {/* Redirigir cualquier otra ruta no válida a "/" (Login) */}
-              <Route path="*" element={<Navigate to="/" />} />
-          </Routes>
-      </Router>
+    <Router>
+      <Routes>
+        {/* Ruta principal que redirige a login si no está autenticado */}
+        <Route path="/" element={isAuthenticated ? <HomePage /> : <Navigate to="/login" />} />
+        {/* <Route path="/" element={<HomePage />} /> */}
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/register" element={<RegisterForm />} />
+        {/* Redirige rutas no válidas a la página principal */}
+        <Route path="/theory-practice" element={<TheoryPracticePage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </Router>
   );
 };
 
