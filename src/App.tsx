@@ -17,7 +17,7 @@ const App: React.FC = () => {
         {/* Ruta principal que redirige a login si no está autenticado */}
         <Route path="/" element={isAuthenticated ? <HomePage /> : <Navigate to="/login" />} />
         {/* <Route path="/" element={<HomePage />} /> */}
-        {/* <Route path="/login" element={<LoginForm />} /> */}
+        <Route path="/login" element={<LoginForm />} />
         <Route path="/register" element={<RegisterForm />} />
         {/* Redirige rutas no válidas a la página principal */}
         <Route path="/theory-practice" element={<TheoryPracticePage />} />
