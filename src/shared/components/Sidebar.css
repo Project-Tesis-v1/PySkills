@@ -1,0 +1,57 @@
+/* src/shared/components/Sidebar.css */
+
+.sidebar {
+  width: 300px;
+  background-color: #1a2e40;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.progress {
+  margin-bottom: 1.5rem;
+}
+
+.progress p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #2b3e52;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progress-fill {
+  height: 10px;
+  background-color: #4caf50;
+}
+
+.chapters h3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.chapters ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.chapters ul li {
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  color: #a8d5e2;
+  cursor: pointer;
+}
+
+.chapters ul li:hover {
+  color: #4caf50;
+}
