@@ -1,0 +1,36 @@
+/* src/pages/HomePage/GameView.css */
+
+.game-view {
+    background-color: #1a2e40;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .game-simulator {
+    width: 100%;
+    height: 100%; /* Ajusta la altura según sea necesario */
+    background-color: #2b3e52;
+    border-radius: 10px;
+    color: white;
+    border: none;
+  }
+  
+  /* Media Query para pantallas medianas (tablets) */
+  @media (max-width: 768px) {
+    .game-simulator {
+      height: 300px;
+    }
+  }
+  
+  /* Media Query para pantallas pequeñas (móviles) */
+  @media (max-width: 480px) {
+    .game-simulator {
+      height: 200px;
+    }
+  }
+  

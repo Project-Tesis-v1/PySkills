@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ onToggleSidebar }) => {
                 <button className='toggle-sidebar-icon' onClick={onToggleSidebar}>
                     <FaBars></FaBars>
                 </button>
-                <span className='navbar-brand'>Nexus</span>
+                <span className='navbar-brand'>PySkill</span>
             </div>
             <input type="text" className="navbar-search" placeholder="Search" />
             <div className="navbar-user">Lomatosiono</div>
